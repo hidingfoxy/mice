@@ -3,9 +3,9 @@
 // Paste this class into your mod and generate all required imports
 
 
-public class mouse<T extends Entity> extends EntityModel<T> {
+public class woolymousesheared<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "mouse"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "woolymousesheared"), "main");
 	private final ModelPart body;
 	private final ModelPart head;
 	private final ModelPart torso;
@@ -15,7 +15,7 @@ public class mouse<T extends Entity> extends EntityModel<T> {
 	private final ModelPart frontrightfoot;
 	private final ModelPart tail;
 
-	public mouse(ModelPart root) {
+	public woolymousesheared(ModelPart root) {
 		this.body = root.getChild("body");
 		this.head = this.body.getChild("head");
 		this.torso = this.body.getChild("torso");
@@ -41,25 +41,33 @@ public class mouse<T extends Entity> extends EntityModel<T> {
 
 		PartDefinition torso = body.addOrReplaceChild("torso", CubeListBuilder.create().texOffs(0, 4).addBox(-1.5F, -3.0F, -4.0F, 3.0F, 3.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.5F, 1.0F, -2.0F));
 
+		PartDefinition cube_r3 = torso.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(0, 12).addBox(0.0F, -0.5F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.0F, -4.0F, -2.0F, 0.0F, 0.0F, 1.5708F));
+
+		PartDefinition cube_r4 = torso.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(0, 12).addBox(0.0F, -0.5F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -4.0F, 0.0F, 0.0F, 0.0F, 1.5708F));
+
+		PartDefinition cube_r5 = torso.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(0, 12).addBox(0.0F, -0.5F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.5F, -2.5F, -1.0F, 0.0F, 0.0F, -3.1416F));
+
+		PartDefinition cube_r6 = torso.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(0, 12).addBox(0.0F, -1.5F, 0.0F, 1.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.5F, -1.5F, -1.0F, 0.0F, 0.0F, -3.1416F));
+
 		PartDefinition rearleftfoot = torso.addOrReplaceChild("rearleftfoot", CubeListBuilder.create(), PartPose.offset(2.5F, 0.0F, 2.0F));
 
-		PartDefinition cube_r3 = rearleftfoot.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(7, 12).addBox(0.0F, 0.0F, -0.5F, 4.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.2F, 0.0F, 0.0F, 0.0F, 1.1345F, 0.0F));
+		PartDefinition cube_r7 = rearleftfoot.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(7, 12).addBox(0.0F, 0.0F, -0.5F, 4.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.2F, 0.0F, 0.0F, 0.0F, 1.1345F, 0.0F));
 
 		PartDefinition rearrightfoot = torso.addOrReplaceChild("rearrightfoot", CubeListBuilder.create(), PartPose.offset(-2.5F, 0.0F, 2.0F));
 
-		PartDefinition cube_r4 = rearrightfoot.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(7, 12).addBox(0.0F, 0.0F, -0.5F, 4.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 0.0F, 0.0F, 0.0F, 1.9199F, 0.0F));
+		PartDefinition cube_r8 = rearrightfoot.addOrReplaceChild("cube_r8", CubeListBuilder.create().texOffs(7, 12).addBox(0.0F, 0.0F, -0.5F, 4.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 0.0F, 0.0F, 0.0F, 1.9199F, 0.0F));
 
 		PartDefinition frontleftfoot = torso.addOrReplaceChild("frontleftfoot", CubeListBuilder.create(), PartPose.offset(2.5F, 0.0F, -5.0F));
 
-		PartDefinition cube_r5 = frontleftfoot.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(9, 7).addBox(0.0F, 0.0F, -2.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 0.0F, 2.0F, 0.0F, 0.7854F, 0.0F));
+		PartDefinition cube_r9 = frontleftfoot.addOrReplaceChild("cube_r9", CubeListBuilder.create().texOffs(9, 7).addBox(0.0F, 0.0F, -2.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 0.0F, 2.0F, 0.0F, 0.7854F, 0.0F));
 
 		PartDefinition frontrightfoot = torso.addOrReplaceChild("frontrightfoot", CubeListBuilder.create(), PartPose.offset(-2.5F, 0.0F, -5.0F));
 
-		PartDefinition cube_r6 = frontrightfoot.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(9, 7).addBox(0.0F, 0.0F, -2.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.0F, 2.0F, 0.0F, 0.7854F, 0.0F));
+		PartDefinition cube_r10 = frontrightfoot.addOrReplaceChild("cube_r10", CubeListBuilder.create().texOffs(9, 7).addBox(0.0F, 0.0F, -2.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.0F, 2.0F, 0.0F, 0.7854F, 0.0F));
 
-		PartDefinition tail = body.addOrReplaceChild("tail", CubeListBuilder.create().texOffs(8, 4).addBox(-0.5F, 1.02F, 1.3F, 1.0F, 0.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.5F, -0.5F, 1.5F));
+		PartDefinition tail = body.addOrReplaceChild("tail", CubeListBuilder.create().texOffs(9, 3).addBox(-0.5F, 1.02F, 1.3F, 1.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.5F, -0.5F, 1.5F));
 
-		PartDefinition cube_r7 = tail.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(7, 3).addBox(0.0F, 0.0F, -1.0F, 1.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 0.0F, -1.5F, -0.3491F, 0.0F, 0.0F));
+		PartDefinition cube_r11 = tail.addOrReplaceChild("cube_r11", CubeListBuilder.create().texOffs(7, 3).addBox(0.0F, 0.0F, -1.0F, 1.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, 0.0F, -1.5F, -0.3491F, 0.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 16, 16);
 	}
