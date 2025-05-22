@@ -1,0 +1,16 @@
+/set time day
+/
+/time day
+/time 1000
+/time set day
+/gamemode
+/gamem
+/gamemode
+/gamemode survival @cassiopeiafox
+/gamemode survival @c
+/gamemode survival
+/gamemode
+/gamemode creative Dev
+/time set day
+/set time day
+/time set day

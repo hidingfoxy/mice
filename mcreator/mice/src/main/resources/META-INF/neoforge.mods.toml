@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Creative Commons Attribution-NonCommercial 3.0"
+
+[[mods]]
+modId="mice"
+version="1.0.0"
+displayName="mice"
+displayURL="https://hidingfox.com"
+logoFile="logo.png"
+credits="Created using mod maker MCreator. Models and textures by hidingfox. Programming help: SalTay, SilentTem"
+authors="hidingfox"
+description="mice"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.mice]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.4.123,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.mice]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.4]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

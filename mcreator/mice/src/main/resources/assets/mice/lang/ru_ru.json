@@ -1,0 +1,18 @@
+{
+  "entity.mice.rat": "Крыса",
+  "item.mice.woolly_mouse_spawn_egg": "Яйцо призыва шерстистой мыши",
+  "subtitles.entity.jerboa.squeaks": "",
+  "subtitles.entity.rat.squeaks": "",
+  "subtitles.entity.rat.squaks": "",
+  "subtitles.entity.jerboa.hurt": "",
+  "item.mice.jerboa_spawn_egg": "Яйцо призыва тушканчика",
+  "item.mice.mouse_spawn_egg": "Яйцо призыва мыши",
+  "entity.mice.jerboa": "Тушканчик",
+  "subtitles.entity.mouse.squeaks": "",
+  "item.mice.rat_spawn_egg": "Яйцо призыва крысы",
+  "entity.mice.woolly_mouse": "Шерстистая мышь",
+  "entity.mice.mouse": "Мышь",
+  "subtitles.entity.mouse.squaks": "",
+  "subtitles.entity.mouse.hurts": "",
+  "subtitles.entity.rat.hurt": ""
+}

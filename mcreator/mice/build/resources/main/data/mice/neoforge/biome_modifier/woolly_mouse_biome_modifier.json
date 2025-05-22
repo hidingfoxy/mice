@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "snowy_slopes",
+    "snowy_beach",
+    "snowy_plains",
+    "snowy_taiga",
+    "old_growth_spruce_taiga",
+    "taiga"
+  ],
+  "spawners": {
+    "type": "mice:woolly_mouse",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "birch_forest",
+    "dark_forest",
+    "flower_forest",
+    "forest",
+    "bamboo_jungle",
+    "dripstone_caves",
+    "grove",
+    "jungle",
+    "mangrove_swamp",
+    "meadow",
+    "mushroom_fields",
+    "plains",
+    "sunflower_plains",
+    "swamp",
+    "taiga",
+    "lush_caves"
+  ],
+  "spawners": {
+    "type": "mice:rat",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

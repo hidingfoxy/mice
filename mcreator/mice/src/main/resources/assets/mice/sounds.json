@@ -1,0 +1,70 @@
+{
+  "entity.mouse.squeaks": {
+    "sounds": [
+      {
+        "name": "mice:mouse_squeak1",
+        "stream": false
+      },
+      {
+        "name": "mice:mouse_squeak2",
+        "stream": false
+      },
+      {
+        "name": "mice:mouse_squeak3",
+        "stream": false
+      }
+    ]
+  },
+  "entity.mouse.hurts": {
+    "sounds": [
+      {
+        "name": "mice:mouse_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "entity.rat.squeaks": {
+    "sounds": [
+      {
+        "name": "mice:rat_squeak1",
+        "stream": false
+      },
+      {
+        "name": "mice:rat_squeak2",
+        "stream": false
+      },
+      {
+        "name": "mice:rat_squeak3",
+        "stream": false
+      }
+    ]
+  },
+  "entity.rat.hurt": {
+    "sounds": [
+      {
+        "name": "mice:rat_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "entity.jerboa.squeaks": {
+    "sounds": [
+      {
+        "name": "mice:jerboa_squeak1",
+        "stream": false
+      },
+      {
+        "name": "mice:jerboa_squeak2",
+        "stream": false
+      }
+    ]
+  },
+  "entity.jerboa.hurt": {
+    "sounds": [
+      {
+        "name": "mice:jerboa_hurt",
+        "stream": false
+      }
+    ]
+  }
+}

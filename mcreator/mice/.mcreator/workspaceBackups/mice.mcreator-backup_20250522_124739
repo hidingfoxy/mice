@@ -1,0 +1,358 @@
+{
+  "mod_elements": [
+    {
+      "name": "Mouse",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mouse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/entity/MouseEntity.java",
+          "src/main/resources/data/mice/neoforge/biome_modifier/mouse_biome_modifier.json",
+          "src/main/java/net/hidingfox/mice/client/renderer/MouseRenderer.java",
+          "src/main/resources/assets/mice/items/mouse_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "MouseRunPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mouse_run_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/MouseRunPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MouseOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mouse_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/MouseOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rat",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/entity/RatEntity.java",
+          "src/main/resources/data/mice/neoforge/biome_modifier/rat_biome_modifier.json",
+          "src/main/resources/assets/mice/items/rat_spawn_egg.json",
+          "src/main/java/net/hidingfox/mice/client/renderer/RatRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Jerboa",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jerboa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/entity/JerboaEntity.java",
+          "src/main/resources/data/mice/neoforge/biome_modifier/jerboa_biome_modifier.json",
+          "src/main/java/net/hidingfox/mice/client/renderer/JerboaRenderer.java",
+          "src/main/resources/assets/mice/items/jerboa_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "JerboaOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jerboa_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/JerboaOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RatOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rat_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/RatOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MousePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mouse_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/MousePlaybackConditionProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "MouseModelVisualScale",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mouse_model_visual_scale",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/MouseModelVisualScaleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WoollyMouse",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woolly_mouse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/client/renderer/WoollyMouseRenderer.java",
+          "src/main/resources/assets/mice/items/woolly_mouse_spawn_egg.json",
+          "src/main/resources/data/mice/neoforge/biome_modifier/woolly_mouse_biome_modifier.json",
+          "src/main/java/net/hidingfox/mice/entity/WoollyMouseEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "WoollyMouseDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woolly_mouse_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/WoollyMouseDisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WoollyMouseRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woolly_mouse_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/WoollyMouseRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WoollyMouseOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woolly_mouse_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/hidingfox/mice/procedures/WoollyMouseOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "entity.mouse.squaks",
+      "files": [
+        "mouse_squak1",
+        "mouse_squak2",
+        "mouse_squak3"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "ru_ru": {
+      "entity.mice.rat": "Крыса",
+      "item.mice.woolly_mouse_spawn_egg": "Яйцо призыва шерстистой мыши",
+      "item.mice.rat_spawn_egg": "Яйцо призыва крысы",
+      "entity.mice.woolly_mouse": "Шерстистая мышь",
+      "entity.mice.mouse": "Мышь",
+      "item.mice.jerboa_spawn_egg": "Яйцо призыва тушканчика",
+      "subtitles.entity.mouse.squaks": "",
+      "item.mice.mouse_spawn_egg": "Яйцо призыва мыши",
+      "entity.mice.jerboa": "Тушканчик"
+    },
+    "sv_se": {
+      "entity.mice.rat": "Råtta",
+      "item.mice.woolly_mouse_spawn_egg": "Skapelseägg för ullhårig mus",
+      "item.mice.rat_spawn_egg": "Skapelseägg för råtta",
+      "entity.mice.woolly_mouse": "Ullhårig mus",
+      "entity.mice.mouse": "Mus",
+      "item.mice.jerboa_spawn_egg": "Skapelseägg för jerboa",
+      "subtitles.entity.mouse.squaks": "",
+      "item.mice.mouse_spawn_egg": "Skapelseägg för mus",
+      "entity.mice.jerboa": "Jerboa"
+    },
+    "en_us": {
+      "entity.mice.rat": "Rat",
+      "item.mice.woolly_mouse_spawn_egg": "Woolly Mouse Spawn Egg",
+      "item.mice.rat_spawn_egg": "Rat Spawn Egg",
+      "entity.mice.woolly_mouse": "Woolly Mouse",
+      "entity.mice.mouse": "Mouse",
+      "item.mice.jerboa_spawn_egg": "Jerboa Spawn Egg",
+      "subtitles.entity.mouse.squaks": "",
+      "item.mice.mouse_spawn_egg": "Mouse Spawn Egg",
+      "entity.mice.jerboa": "Jerboa"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mice",
+    "modName": "mice",
+    "version": "1.0.0",
+    "description": "mice",
+    "author": "hidingfox",
+    "websiteURL": "https://hidingfox.com",
+    "license": "Creative Commons Attribution-NonCommercial 3.0",
+    "serverSideOnly": false,
+    "modPicture": "logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "credits": "Created using mod maker MCreator. Models and textures by hidingfox. Programming help: SalTay, SilentTem",
+    "modElementsPackage": "net.hidingfox.mice"
+  },
+  "mcreatorVersion": 202500113416
+}
